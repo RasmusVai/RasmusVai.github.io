@@ -30,13 +30,21 @@ html{
 
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
+  
 }
 
 canvas{
   display:block;
 }
 
-
+.btext {
+  color: snow;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 
 
 /* ---- stats.js ---- */
@@ -88,4 +96,36 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+h1 { 
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+  font-size: 60px; font-style: normal; 
+  font-variant: normal; font-weight: 700; 
+  line-height: 26.4px; 
+} 
+h3 { 
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+  font-size: 14px; font-style: normal; 
+  font-variant: normal; font-weight: 700; line-height: 15.4px; 
+} 
+p { 
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+  font-size: 14px; font-style: normal; 
+  font-variant: normal; font-weight: 400; 
+  line-height: 20px; 
+} 
+blockquote { 
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+  font-size: 21px; font-style: normal; 
+  font-variant: normal; font-weight: 400; 
+  line-height: 30px; 
+} 
+pre { 
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+  font-size: 13px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  line-height: 18.5667px; 
 }
