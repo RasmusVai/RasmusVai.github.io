@@ -47,10 +47,15 @@ canvas{
 .btext {
   color: snow;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 50%;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
 }
 
 
