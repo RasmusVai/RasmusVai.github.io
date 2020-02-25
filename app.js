@@ -123,8 +123,10 @@ class App {
       if (!event.target.matches(".toolbar-color")) return;
       this.id = event.target.nextElementSibling.dataset.id;
       const noteCoords = event.target.getBoundingClientRect();
-      const horizontal = noteCoords.left + window.scrollX;
-      const vertical = noteCoords.top + window.scrollY;
+      //const horizontal = noteCoords.left + window.scrollX;
+      //const vertical = noteCoords.top + window.scrollY;
+      const horizontal = noteCoords.left;
+      const vertical = window.scrollY - 20
       this.$colorTooltip.style.transform = `translate(${horizontal}px, ${vertical}px)`;
       this.$colorTooltip.style.display = "flex";
     }
